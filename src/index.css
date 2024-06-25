@@ -1,0 +1,194 @@
+body {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:40px;
+  background-color: hsl(195, 53%, 9%);
+}
+
+.open-form-btn {
+  
+  padding-left:-80px;
+  width: 250px;
+  height: 50px;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0px 5px;
+  background-color: hsl(271, 76%, 33%);
+  color:white;
+  border:none;
+  border-radius: 5px;
+  cursor:pointer;
+  transition: background-color 0.4s ease;
+}
+.open-form-btn:hover {
+background-color: hsl(271, 76%, 43%);
+} 
+.form-btn-container {
+  text-align:center;
+}
+
+.task-form {
+  color:white;
+  display:flex;
+  flex-direction: column;
+  gap:20px; 
+  align-items:center;
+ 
+}
+.task-form label {
+  font-size: 2em;
+}
+.task-form input {
+  width: 350px;
+  height:30px;
+  font-size: 1.5em;
+  color:white;
+  background-color: hsl(0, 0%, 30%);
+}
+.task-form textarea {
+  width: 350px;
+  height: 60px;
+  font-size: 1.5em;
+  color:white;
+  background-color: hsl(0, 0%, 30%);
+}
+.task-form button {
+  width: 170px;
+  height:50px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  background-color: hsl(271, 76%, 33%);
+  transition: background-color 0.4s ease;
+  cursor:pointer;
+  color:white;
+}
+
+.task-form button:hover {
+  background-color: hsl(271, 76%, 43%);
+}
+ul {
+  display:flex;
+  flex-direction: column;
+  padding:10px;
+
+}
+.list {
+  overflow-x: auto  ;
+  width: 450px;
+  flex-wrap:wrap;
+  list-style: none;
+  color:white;
+  padding:10px;
+  margin:10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2), 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: left;
+}
+.list h3 {
+  font-size: 1.7em;
+}
+.list p {
+  font-size: 1.2em;
+}
+.delete-btn, .edit-btn {
+  margin: 5px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  cursor:pointer;
+
+}
+
+.delete-btn {
+  background-color: transparent;
+  color:red;
+  border: 2px solid hsl(0, 100%, 30%);
+}
+
+.edit-btn {
+  background-color: transparent;
+  border: 2px solid hsl(120, 100%, 20%);
+  color: hsl(120, 100%, 20%);
+}
+
+.edit-task-form {
+  display:flex;
+  flex-direction: column;
+
+  margin-top: 10px;
+  justify-content: center;
+  offset-path: 10px;
+
+}
+.edit-task-form input {
+
+  color:white;
+  background-color: hsl(0, 0%, 30%);
+  margin:5px;
+  
+}
+.edit-task-form button {
+  margin:5px;
+  font-size: 0.7em;
+  width: 60px;
+  height:35px;
+  border:none;
+  border-radius: 5px;
+  background-color: hsl(271, 76%, 53%);
+  cursor:pointer;
+  transition: background-color 0.3s ease;
+  color:white;
+}
+.edit-task-form button:hover {
+  background-color: hsl(271, 76%, 40%);
+}
+
+@media only screen and (max-width: 727px) {
+  body {
+    margin-top: 20px;
+  }
+
+  .open-form-btn {
+    width: 200px;
+    height: 40px;
+    font-size: 1.2em;
+  }
+
+  .task-form input,
+  .task-form textarea {
+    width: 280px;
+    font-size: 1.2em;
+  }
+
+  .task-form button {
+    width: 150px;
+    height: 40px;
+    font-size: 1em;
+  }
+
+  .list {
+    width: 100%;
+    font-size: 1em;
+    align-items:center;
+  }
+
+  .list h3 {
+    font-size: 1.5em;
+  }
+
+  .list p {
+    font-size: 1em;
+  }
+  
+  .delete-btn, .edit-btn {
+    font-size: 0.9em;
+  }
+
+  .edit-task-form button {
+    width: 50px;
+    height: 30px;
+    font-size: 0.6em;
+  }
+}
